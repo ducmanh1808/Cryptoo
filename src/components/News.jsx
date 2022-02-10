@@ -35,12 +35,12 @@ const News = ({ simplified }) => {
         </Col>
       )}
       {cryptoNews?.value.map((news, i) => (
-        <Col xs={24} sm={12} md={12} lg={6} key={i}>
+        <Col xs={24} md={12} lg={8} key={i}>
           <Card hoverable className="news-card" >
             <a href={news.url} target="_blank" rel="oreferrer" className="news-card-body">
               <div className="news-image-container">
                 <Title level={4}>{news.name}</Title>
-                <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="news" style={{maxWidth: '200px', maxHeight: '200px'}}/>
+                <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="news" style={{maxWidth: '200px', maxHeight: '200px', margin: '3px'}}/>
               </div>
               <p>{news.description.length > 150 ? `${news.description.substring(0, 150)}...` : news.description}</p>
               <div className="provider-container">

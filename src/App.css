@@ -123,7 +123,7 @@ a:hover{
         margin-left: 100px;
     }
 }
-@media screen and (max-width:992px){
+@media screen and (max-width:991px){
     .site-layout{
        margin-left: 0;
     }
@@ -345,6 +345,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 .news-image-container{
     display: flex !important;
